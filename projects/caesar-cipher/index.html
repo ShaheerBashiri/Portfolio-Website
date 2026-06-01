@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caesar-Cipher-Demo | Mohammad Shahir Bashiri</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="cipher-shell">
+    <a class="back-link" href="../../">Zurück zum Portfolio</a>
+
+    <section class="intro">
+      <p class="eyebrow">JavaScript Algorithmus</p>
+      <h1>Caesar-Cipher-Demo</h1>
+      <p>
+        Diese Webapp verschiebt Buchstaben im Alphabet um einen Schlüssel. Sie ist eine Lern-Demo für Zeichenverarbeitung, keine sichere Verschlüsselung.
+      </p>
+    </section>
+
+    <section class="cipher-grid">
+      <form class="cipher-card" id="encodeForm">
+        <h2>Text verschlüsseln</h2>
+        <label for="plainText">Nachricht</label>
+        <textarea id="plainText" rows="5" placeholder="Text eingeben"></textarea>
+        <button type="submit">Verschlüsseln</button>
+
+        <label for="encodedText">Verschlüsselter Text</label>
+        <textarea id="encodedText" rows="5" readonly></textarea>
+
+        <div class="key-row">
+          <span>Schlüssel</span>
+          <strong id="generatedKey">-</strong>
+        </div>
+        <button class="secondary" id="copyEncoded" type="button">Text kopieren</button>
+      </form>
+
+      <form class="cipher-card" id="decodeForm">
+        <h2>Text entschlüsseln</h2>
+        <label for="decodeKey">Schlüssel</label>
+        <input id="decodeKey" type="number" min="1" max="26" placeholder="1 bis 26">
+
+        <label for="cipherText">Verschlüsselter Text</label>
+        <textarea id="cipherText" rows="5" placeholder="Verschlüsselten Text eingeben"></textarea>
+        <button type="submit">Entschlüsseln</button>
+
+        <label for="decodedText">Ergebnis</label>
+        <textarea id="decodedText" rows="5" readonly></textarea>
+        <button class="secondary" id="copyDecoded" type="button">Ergebnis kopieren</button>
+      </form>
+    </section>
+
+    <p class="status" id="status"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

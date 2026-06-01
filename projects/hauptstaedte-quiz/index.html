@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hauptstädte-Quiz | Mohammad Shahir Bashiri</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="quiz-shell">
+    <a class="back-link" href="../../">Zurück zum Portfolio</a>
+
+    <section class="quiz-card">
+      <div class="quiz-header">
+        <div>
+          <p class="eyebrow">JavaScript Quiz</p>
+          <h1>Hauptstädte-Quiz</h1>
+        </div>
+        <button class="mode-button" id="modeButton" type="button">Modus: Texteingabe</button>
+      </div>
+
+      <div class="stats">
+        <span id="score">Punkte: 0</span>
+        <span id="progress">Frage 1</span>
+      </div>
+
+      <div class="question-box">
+        <p id="question"></p>
+        <div class="text-mode" id="textMode">
+          <input type="text" id="answerInput" autocomplete="off" placeholder="Hauptstadt eingeben">
+          <button id="checkButton" type="button">Antwort prüfen</button>
+        </div>
+        <div class="choice-grid is-hidden" id="choiceGrid"></div>
+      </div>
+
+      <p class="feedback" id="feedback"></p>
+
+      <div class="actions">
+        <button id="nextButton" type="button" disabled>Nächste Frage</button>
+        <button id="restartButton" type="button">Neu starten</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
