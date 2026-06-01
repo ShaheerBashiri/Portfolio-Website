@@ -101,9 +101,9 @@ a {
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
   gap: 2rem;
-  align-items: end;
-  min-height: calc(100vh - 66px);
-  padding: 6rem 0 4rem;
+  align-items: center;
+  min-height: min(720px, calc(100vh - 66px));
+  padding: 4.5rem 0;
 }
 
 .hero h1,
